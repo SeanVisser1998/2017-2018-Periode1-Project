@@ -32,4 +32,9 @@
 			$config['mysql']['password'],
 			$config['mysql']['database']
 		);
+
+	function mySQLiConnect(){
+		$link;
+	}
+
 ?>

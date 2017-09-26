@@ -6,6 +6,7 @@
 	**/
 
 	//Include de algemene SQL configuratie
+	include("conf/config.conf.php");
 
 
 
@@ -19,8 +20,7 @@
 		echo "<p1>Dit is de login pagina<p1>";
 		echo "<div id=\"login_form\">"; //ID VOOR CSS: login_form
 		echo "<form action=\"\" method=\"post\">";
-		echo "<label>Gebruikersnaam: </label>";
-		echo "<input id=\"name\" name=\"username\" placeholder=\"username\" type=\"text\">";
+		echo "<input id=\"name\" name=\"username\" placeholder=\"gebruikersnaam\" type=\"text\">";
 		echo "<input id=\"password\" name=\"password\" placeholder=\"***********\" type=\"password\">";
 		echo "<input name\"invoeren\" type=\"submit\" value=\" Login \">";
 
@@ -35,6 +35,7 @@
 
 	//Functie voor het maken van een session, wordt gebruik gemaakt van MySQL verbinden.
 	function getSession(){
+		mySQLiConnect(); //"conf/config.conf.inc"
 
 
 	}
