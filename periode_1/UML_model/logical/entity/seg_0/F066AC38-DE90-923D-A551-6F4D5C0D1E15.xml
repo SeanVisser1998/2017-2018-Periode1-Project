@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F066AC38-DE90-923D-A551-6F4D5C0D1E15" name="order">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:24:23 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="orderID" id="9BF7F023-0889-2E20-0888-BC8B9DF3F352">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:24:32 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+</Attribute>
+<Attribute name="totalPrice" id="BFAF478E-C0BE-AFC3-9BA7-2F0838E7C956">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:24:52 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+</Attribute>
+<Attribute name="memberID" id="F89980B9-A3C1-C9CC-CBE4-B92ED171A8A9">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:26:43 UTC</createdTime>
+<generatorID>B92EBE8A-5D56-5865-4080-4FAE0D72DC93</generatorID>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<referedAttribute>9E599E7A-F970-0038-91AD-A1E2E8451B5B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2C19EB22-28C1-A074-F6DE-E2DA2C633708" name="order PK">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:24:48 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9BF7F023-0889-2E20-0888-BC8B9DF3F352</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

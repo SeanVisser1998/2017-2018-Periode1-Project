@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="4036DC82-BB38-0CCC-AD59-39488A20EDB7" name="MEMBER" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3D872BCA-36B5-B774-4108-CA830A02E483" name="MENU" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F066AC38-DE90-923D-A551-6F4D5C0D1E15" name="order" seqName="seg_0"/>
+   <object objectType="Relation" objectID="AF3349E6-5161-BEA1-EC74-F93EC1D78546" name="Relation_1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B92EBE8A-5D56-5865-4080-4FAE0D72DC93" name="Relation_2" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

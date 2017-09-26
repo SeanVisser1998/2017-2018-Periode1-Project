@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4036DC82-BB38-0CCC-AD59-39488A20EDB7" name="MEMBER">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:13:17 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="memberID" id="9E599E7A-F970-0038-91AD-A1E2E8451B5B">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:14:25 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+</Attribute>
+<Attribute name="voorNaam" id="A64CD021-6A11-70EF-E028-75E1CB2A7740">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:14:39 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Attribute>
+<Attribute name="achterNaam" id="7E81C111-56BB-791A-0CA2-B9A2A9E4ECD5">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:15:27 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>max(50)</dataTypeSize>
+</Attribute>
+<Attribute name="telefoon" id="D4C6C63C-790F-7941-4502-175C3E1E747A">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:15:56 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="postcode" id="EF74B671-B580-AC71-9E45-6E80F56463EF">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:16:33 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>max(7)</dataTypeSize>
+</Attribute>
+<Attribute name="huisnummer" id="4EAE90F5-814C-2A49-95C4-A6C067242250">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:17:16 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="email" id="33B71309-27C4-125F-7500-4DBD5E4AF0B8">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:18:27 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>max(70)</dataTypeSize>
+</Attribute>
+<Attribute name="wachtwoord" id="C93D92DF-C2ED-284D-0D20-D0519EA0B633">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:18:49 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>max(25)</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DAAEC3E8-B2B3-2C83-64C0-DB52E41D4165" name="MEMBER PK">
+<createdBy>Sean</createdBy>
+<createdTime>2017-09-25 14:17:53 UTC</createdTime>
+<ownerDesignName>UML_model</ownerDesignName>
+<engineerTo>
+<item key="AE8EAED1-891D-300F-81AE-1305B3C311F9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9E599E7A-F970-0038-91AD-A1E2E8451B5B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
