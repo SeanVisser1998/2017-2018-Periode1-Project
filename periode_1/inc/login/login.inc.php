@@ -48,17 +48,17 @@
 	//Functie voor het maken van een session, wordt gebruik gemaakt van MySQL verbinden.
 	function getSession(){
 
-	// Establishing Connection with Server by passing server_name, user_id and password as a parameter
+	//DATABASE CONNECTIE
 	$link;
-	// Storing Session
+	// Sessie opslaan
 	$user_check=$_SESSION['login_user'];
-	// SQL Query To Fetch Complete Information Of User
+	// SQL QUery voor het verwerken van de informatie
 	$ses_sql=mysqli_query("select username from login where username='$user_check'", $link);
 	$row = mysqli_fetch_assoc($link, $ses_sql);
 	$login_session =$row['username'];
 	if(!isset($login_session)){
 	mysqli_close($link); // Closing Connection
-	header('Location: index.php'); // Redirecting To Home Page
+	header('Location: index.php'); // Redirect naar de Home Page
 }
 
 
