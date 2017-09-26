@@ -40,7 +40,7 @@
 
 	}
 
-	//Functie voor het ophalen van de inlog pagina
+	//Functie waarbij gegevens ingevoerd in "getLoginPage" gechecked worden tegen de DB.
 	function clientLogin(){
 
 
