@@ -9,9 +9,9 @@
 	* MySQL-DB inlog gegevens
 	**/
 	$config['mysql']['hostname'] = "localhost";
-	$config['mysql']['username'] = "username";
-	$config['mysql']['password'] = "password";
-	$config['mysql']['database'] = "database";
+	$config['mysql']['username'] = "etensite";
+	$config['mysql']['password'] = "DRTzlKUROoEMFHjm";
+	$config['mysql']['database'] = "etensite";
 
 
 	/**
@@ -32,6 +32,7 @@
 			$config['mysql']['password'],
 			$config['mysql']['database']
 		);
+
 
 
 ?>

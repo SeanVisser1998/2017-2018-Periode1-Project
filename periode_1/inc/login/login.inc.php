@@ -12,7 +12,7 @@
 
 	//Functie voor het ophalen van de inlog pagina 
 	//CSS naam: login
-	//https://www.formget.com/login-form-in-php/
+	
 
 	function getLoginPage(){
 
@@ -24,18 +24,43 @@
 		echo "<input id=\"password\" name=\"password\" placeholder=\"***********\" type=\"password\">";
 		echo "<input name\"invoeren\" type=\"submit\" value=\" Login \">";
 
+		
+
 
 	}
 
 	//Functie voor het nagaan van het profiel
 	function getProfile(){
 
+	echo '<head>';
+	echo '<link href="style.css" rel="stylesheet" type="text/css">';
+	echo '</head>';
+	echo '<body>';
+	echo '<div id="profile">';
+	echo '<b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>';
+	echo '</div>';
+	echo '</body>';
+
+
 
 	}
 
 	//Functie voor het maken van een session, wordt gebruik gemaakt van MySQL verbinden.
 	function getSession(){
-		mySQLiConnect(); //"conf/config.conf.inc"
+
+	// Establishing Connection with Server by passing server_name, user_id and password as a parameter
+	$link;
+	// Storing Session
+	$user_check=$_SESSION['login_user'];
+	// SQL Query To Fetch Complete Information Of User
+	$ses_sql=mysqli_query("select username from login where username='$user_check'", $link);
+	$row = mysqli_fetch_assoc($link, $ses_sql);
+	$login_session =$row['username'];
+	if(!isset($login_session)){
+	mysqli_close($link); // Closing Connection
+	header('Location: index.php'); // Redirecting To Home Page
+}
+
 
 
 	}
@@ -55,6 +80,30 @@
 				//Geeft aan wat de variabelen $username & $password zijn
 				$username = $_POST['username'];
 				$password = $_POST['password'];
+
+				//Maakt verbinding met de DB
+				$link;
+
+
+				if(mysqli_connect_errno()){
+					echo "FAILED!";
+				}
+				//BESCHERMING TEGEN BASIS MY SQL INJECTION
+				$username = stripslashes($username);
+				$password = stripslashes($password);
+				$username = mysqli_real_escape_string($link, $username);
+				$password = mysqli_real_escape_string($link, $password);
+
+				//QUERY
+				$query = mysqli_query("select * from login where password='$password' AND username='$username'", $link);
+				$rows = mysqli_num_rows($query);
+
+				if($rows==1){
+
+					$_SESSION['login_user']=$username;
+					header("location: index.php?action=profile"); //Redirect de user naar zijn profiel als deze is ingelogd :D
+				}else{$error = "Username or password is invalid";}
+				mysqli_close($link);
 			}
 		}
 
@@ -64,6 +113,9 @@
 	//Functie voor het ophalen van de inlog pagina 
 	function clientLogout(){
 
-
+		if(session_destroy()) // Destroying All Sessions
+	{
+	header("Location: index.php"); // Redirecting To Home Page
+	}
 	}
 ?>

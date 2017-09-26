@@ -79,3 +79,20 @@ $testCase = "steak"; //Moet na het testen terug verandert worden naar: getCurren
 	displayFooter(); //Displayed de Footer. "inc/general.inc.php"
 
 	?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		a{
+			float: left;
+			margin: 2px;
+		}
+	</style>
+</head>
+<body>
+
+</body>
+</html>

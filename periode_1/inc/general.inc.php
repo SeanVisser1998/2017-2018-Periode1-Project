@@ -33,7 +33,7 @@
 		echo "	<div class=\"button\"><a href=\"index.php?action=pizza\">Pizza's</a></div>";
 		echo "	<div class=\"button\"><a href=\"index.php?action=steak\">Steaks</a></div>";
 		echo "	<div class=\"button\"><a href=\"index.php?action=fastfood\">Fastfood</a></div>";
-		echo "	<div class=\"button\"><a href=\"index.php?action=login\">Login</a></div>";
+		echo "	<div class=\"button\"><a href=\"index.php?action=login\">Login</a></div></br>";
 		echo "</div>"; //Eind ID navigation
 	}
 
