@@ -20,7 +20,7 @@
 		echo "<p1>Dit is de login pagina<p1>";
 		echo "<div id=\"login_form\">"; //ID VOOR CSS: login_form
 		echo "<form action=\"\" method=\"post\">";
-		echo "<input id=\"name\" name=\"username\" placeholder=\"gebruikersnaam\" type=\"text\">";
+		echo "<input required id=\"name\" name=\"username\" placeholder=\"gebruikersnaam\" type=\"text\">";
 		echo "<input id=\"password\" name=\"password\" placeholder=\"***********\" type=\"password\">";
 		echo "<input name\"invoeren\" type=\"submit\" value=\" Login \">";
 
@@ -42,6 +42,21 @@
 
 	//Functie waarbij gegevens ingevoerd in "getLoginPage" gechecked worden tegen de DB.
 	function clientLogin(){
+
+		//Kijkt of er een waarde is voor $_POST['submit']
+		if(isset($_POST['submit'])){
+
+			//Kijkt of $_POST['username'] OF $_POST['password'] leeg is
+			if(empty($_POST['username']) || empty($_POST['password'])){
+				$error = "Username or password is invalid";
+			}
+			else
+			{
+				//Geeft aan wat de variabelen $username & $password zijn
+				$username = $_POST['username'];
+				$password = $_POST['password'];
+			}
+		}
 
 
 	}

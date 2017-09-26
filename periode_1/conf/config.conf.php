@@ -33,8 +33,5 @@
 			$config['mysql']['database']
 		);
 
-	function mySQLiConnect(){
-		$link;
-	}
 
 ?>
