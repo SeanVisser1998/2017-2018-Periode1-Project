@@ -1,7 +1,7 @@
 <?php
 
 	/**
-	* Abe Hiemstra, Rick Prins, Stijn Kammer, Sean Visser
+	* Project Groep: A
 	* ITVA1
 	* Project: Webdevelopment
 	**/
